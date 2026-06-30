@@ -3,10 +3,9 @@ import joblib
 import pandas as pd
 import numpy as np
 
-# 1. Load the model you downloaded
-model = joblib.load('worldcup_predictor_model.pkl')
-
-st.title("⚽ FIFA 2026 World Cup Match Predictor")
+# 1. Load the model and scaler
+model = joblib.load('model.pkl')
+scaler = joblib.load('scaler.pkl')
 st.write("This app uses a live machine learning model to simulate match outcomes!")
 
 # 2. User Input Elements
